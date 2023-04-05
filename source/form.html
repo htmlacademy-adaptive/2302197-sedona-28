@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page_body">
+  <header class="main-header">
+    <a class="main-header_logo">
+      <img src="../source/img/logotype.svg" width="185" height="96" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav_toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav_wrapper">
+        <ul class="main-nav_list site-list">
+          <li class="site-list_item site-list_item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list_item">
+            <a href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav_list user-list">
+          <li class="user-list_item">
+            <a>
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="user-list_item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">l
+    <h1 class="visually-hidden">Седона</h1>
+    <img src="../source/img/photo-mountains.jpg" width="520" height="260" alt="Вид на горы">
+    <header class="form_header">
+      <h2 class="form_title title">Оставьте свой отзыв</h2>
+      <p class="form_description description">Помогите нашим отелям стать лучше!
+         оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </header>
+    <form class="form_feedback" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form_fieldset">
+        <legend class="form_fieldset-name">Представьтесь:</legend>
+        <div class="field_wrapper">
+          <label class="field_label" for="firstname">ИМЯ*:</label>
+          <input class="field_input" id="firstname" type="text" name="firstname" placeholder="Введите имя">
+        </div>
+      </fieldset>
+    </form>
+  </main>
