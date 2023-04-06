@@ -49,15 +49,64 @@
     <header class="form_header">
       <h2 class="form_title title">Оставьте свой отзыв</h2>
       <p class="form_description description">Помогите нашим отелям стать лучше!
-         оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
-    <form class="form_feedback" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form_fieldset">
-        <legend class="form_fieldset-name">Представьтесь:</legend>
+    <form class="feedback_form form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form_fieldset field">
+        <legend class="field_title">Представьтесь:</legend>
         <div class="field_wrapper">
-          <label class="field_label" for="firstname">ИМЯ*:</label>
-          <input class="field_input" id="firstname" type="text" name="firstname" placeholder="Введите имя">
+          <label class="field_label" for="name">Имя*:</label>
+          <input class="field_input" id="name" type="text" name="name" placeholder="Введите имя">
+        </div>
+        <div class="field_wrapper">
+          <label class="field_label" for="surname">Фамилия*:</label>
+          <input class="field_input" id="surname" type="text" name="surname" placeholder="Введите фамилию">
+        </div>
+        <div class="field_wrapper">
+          <label class="field_label" for="middlename">Отчество:</label>
+          <input class="field_input" id="middlename" type="text" name="middlename" placeholder="Введите отчество">
         </div>
       </fieldset>
+      <fieldset class="form_fieldset field-contacts">
+        <legend class="field-contacts_title">Контактная информация</legend>
+        <div class="field-contacts_wrapper">
+          <label class="field-contacts_label" for="telephone">Контактный телефон*:</label>
+          <input class="field-contacts_input" id="telephone" type="text" name="telephone" placeholder="Введите телефон">
+        </div>
+        <div class="field-contacts_wrapper">
+          <label class="field-contacts_label" for="e-mail">Электронная почта*:</label>
+          <input class="field-contacts_input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+      </fieldset>
+      <fieldset class="form_fieldset field-impressions">
+        <legend class="field-impressions_title">Ваше общее впечатление:</legend>
+        <ul class="field-impressions_list ">
+          <li class="field-impressions_item">
+            <label class="control">
+
+
+              <input class="visually-hidden control-input" type="checkbox" name="impressions"
+               value="true" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Бассейн</span>
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="facilities"
+               value="parking" checked>
+               <span class="control-mark"></span>
+               <span class="control-label">Парковка</span>
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="checkbox" name="facilities"
+               value="wi-fi">
+               <span class="control-mark"></span>
+               <span class="control-label">Wi-Fi</span>
+            </label>
+        </ul>
+      </fieldset>
+
     </form>
   </main>
