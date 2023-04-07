@@ -7,16 +7,16 @@
 </head>
 
 <body class="page_body">
-  <header class="main-header">
-    <a class="main-header_logo">
+  <header class="form-header">
+    <a class="form-header_logo">
       <img src="../source/img/logotype.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav_toggle" type="button">
+    <nav class="form-nav">
+      <button class="form-nav_toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav_wrapper">
-        <ul class="main-nav_list site-list">
+      <div class="form-nav_wrapper">
+        <ul class="form-nav_list site-list">
           <li class="site-list_item site-list_item--active">
             <a href="index.html">
               Главная
@@ -28,7 +28,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav_list user-list">
+        <ul class="form-nav_list user-list">
           <li class="user-list_item">
             <a>
               Форма Отзыва
@@ -43,8 +43,8 @@
       </div>
     </nav>
   </header>
-  <main class="main">l
-    <h1 class="visually-hidden">Седона</h1>
+  <main class="main-container">
+    <h1 class="visually-hidden">Форма отзыва</h1>
     <img src="../source/img/photo-mountains.jpg" width="520" height="260" alt="Вид на горы">
     <header class="form_header">
       <h2 class="form_title title">Оставьте свой отзыв</h2>
@@ -71,42 +71,111 @@
         <legend class="field-contacts_title">Контактная информация</legend>
         <div class="field-contacts_wrapper">
           <label class="field-contacts_label" for="telephone">Контактный телефон*:</label>
-          <input class="field-contacts_input" id="telephone" type="text" name="telephone" placeholder="Введите телефон">
+          <input class="field-contacts_input" id="telephone" type="tel" name="telephone" placeholder="Введите телефон">
         </div>
         <div class="field-contacts_wrapper">
           <label class="field-contacts_label" for="e-mail">Электронная почта*:</label>
-          <input class="field-contacts_input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+          <input class="field-contacts_input" id="e-mail" type="email" name="e-mail" placeholder="Введите e-mail">
       </fieldset>
       <fieldset class="form_fieldset field-impressions">
         <legend class="field-impressions_title">Ваше общее впечатление:</legend>
         <ul class="field-impressions_list ">
           <li class="field-impressions_item">
-            <label class="control">
-
-
-              <input class="visually-hidden control-input" type="checkbox" name="impressions"
+            <label class="field-impressions_control">
+              <input class="visually-hidden field-impressions_input" type="checkbox" name="impressions"
                value="true" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Бассейн</span>
+              <span class="field-impressions_mark"></span>
+              <span class="field-impressions_Label">Скорее положительное</span>
             </label>
           </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="facilities"
-               value="parking" checked>
-               <span class="control-mark"></span>
-               <span class="control-label">Парковка</span>
+          <li class="field-impressions_item">
+            <label class="field-impressions_control">
+              <input class="visually-hidden field-impressions_input" type="checkbox" name="impressions"
+               value="false">
+              <span class="field-impressions_mark"></span>
+              <span class="field-impressions_Label">Скорее отрицательное</span>
             </label>
           </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="facilities"
-               value="wi-fi">
-               <span class="control-mark"></span>
-               <span class="control-label">Wi-Fi</span>
+          <li class="field-impressions_item">
+            <label class="field-impressions_control">
+              <input class="visually-hidden field-impressions_input" type="checkbox" name="impressions"
+               value="difficult">
+              <span class="field-impressions_mark"></span>
+              <span class="field-impressions_Label">Затрудняюсь ответить</span>
             </label>
+          </li>
         </ul>
       </fieldset>
-
+      <fieldset class="form_fieldset field-sights">
+        <legend class="field-sights_title">Посещенные достопримечательности:</legend>
+        <ul class="field-sights_list ">
+          <li class="field-sights_item">
+            <label class="field-sights_control">
+              <input class="visually-hidden field-sights_input" type="checkbox" name="sights"
+               value="bridge" checked>
+              <span class="field-sights_mark"></span>
+              <span class="field-sights_Label">Мост Дьвола</span>
+            </label>
+          </li>
+          <li class="field-sights_item">
+            <label class="field-sights_control">
+              <input class="visually-hidden field-sights_input" type="checkbox" name="sights"
+               value="mountain" checked>
+              <span class="field-sights_mark"></span>
+              <span class="field-sights_Label">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="field-sights_item">
+            <label class="field-sights_control">
+              <input class="visually-hidden field-sights_input" type="checkbox" name="sights"
+               value="Park" checked>
+              <span class="field-sights_mark"></span>
+              <span class="field-sights_Label">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="field-sights_item">
+            <label class="field-sights_control">
+              <input class="visually-hidden field-sights_input" type="checkbox" name="sights"
+               value="Rocks">
+              <span class="field-sights_mark"></span>
+              <span class="field-sights_Label">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form_fieldset field-emotions">
+        <legend class="field-emotions_title">Опишите свои эмоции:</legend>
+        <textarea class="field-emotions_description">Опишите подробно свои восторги</textarea>
+      </fieldset>
+      <button class="form_button" type="button">Отправить отзыв</button>
+      <span>* — обязательные поля</span>
     </form>
   </main>
+  <footer class="form-footer">
+    <a class="form-footer_link" href="#">#visitSEDONA</a>
+    <div class="form-footer_contacts">
+      <ul class="social_list">
+        <li class="social_item">
+          <a class="social_link social_link--vkontakte" href="https://vk.com/htmlacademy">Мы Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+            Ютубе</a>
+        </li>
+      </ul>
+      <div class="form-footer_developed developed">
+        <b class="developed_text">Разработано</b>
+        <span class="visually-hidden">HTML Academy</span>
+        <a class="developed_link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg src="form-footer_icon" width="27" height="35">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
