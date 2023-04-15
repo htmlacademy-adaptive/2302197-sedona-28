@@ -1,10 +1,17 @@
-
+.advantages__list {
+  @include list-reset;
+}
 
 .advantages__intro {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .advantages__number {
@@ -45,7 +52,9 @@
 }
 
 .infrastructure__list {
-background-color: #EEEEEE;
+  @include list-reset;
+  background-color: #EEEEEE;
+
 }
 
 .advantages__bridge {
