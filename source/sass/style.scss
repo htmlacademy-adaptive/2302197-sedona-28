@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+//базовые свойства
+@import "./base/font.scss";
+@import "./base/base.scss";
+
+//миксины и переменные
+@import "./mixins.scss";
+
+//блоки компонентов
+@import "./blocks/advantages.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main-footer";
+@import "./blocks/intro.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/search.scss";
+
+
+
