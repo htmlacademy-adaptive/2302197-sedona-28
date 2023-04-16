@@ -54,8 +54,8 @@
       <p class="form-header__description description">Помогите нашим отелям стать лучше!
         оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
-    <form class="feedback-form form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form__fieldset field">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="feedback-form__fieldset field">
         <legend class="field__title">Представьтесь:</legend>
         <div class="field__wrapper">
           <label class="field__label" for="name">Имя*:</label>
@@ -71,7 +71,7 @@
             required>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset field-contacts">
+      <fieldset class="feedback-form__fieldset field-contacts">
         <legend class="field-contacts__title">Контактная информация</legend>
         <div class="field-contacts__wrapper">
           <label class="field-contacts__label" for="telephone">Контактный телефон*:</label>
@@ -84,7 +84,7 @@
             required>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset field-impressions">
+      <fieldset class="feedback-form__fieldset field-impressions">
         <legend class="field-impressions__title">Ваше общее впечатление:</legend>
         <ul class="field-impressions__list ">
           <li class="field-impressions__item">
@@ -108,7 +108,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset field-sights">
+      <fieldset class="feedback-form__fieldset field-sights">
         <legend class="field-sights__title">Посещенные достопримечательности:</legend>
         <ul class="field-sights__list ">
           <li class="field-sights__item">
@@ -141,12 +141,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset field-emotions">
+      <fieldset class="feedback-form__fieldset field-emotions">
         <legend class="field-emotions__title">Опишите свои эмоции:</legend>
         <textarea class="field-emotions__description">Опишите подробно свои восторги</textarea>
       </fieldset>
-      <button class="form__button" type="submit">Отправить отзыв</button>
-      <span>* — обязательные поля</span>
+      <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+      <span class="feedback-form__required">* — обязательные поля</span>
     </form>
   </main>
   <footer class="form-footer">
