@@ -3,3 +3,18 @@
   line-height: 21px;
   font-weight: 400;
 }
+
+.field-contacts__title {
+  padding-top: 24px;
+}
+
+.field-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field-contacts__input {
+  width: 280px;
+  height: 58px;
+}
