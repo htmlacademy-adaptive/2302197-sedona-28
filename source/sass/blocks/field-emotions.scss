@@ -4,7 +4,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
   border: none;
   background-color:#F2F2F2;
@@ -13,10 +13,4 @@
 
 .field-emotions__title {
   padding-top: 24px;
-}
-
-.field__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
