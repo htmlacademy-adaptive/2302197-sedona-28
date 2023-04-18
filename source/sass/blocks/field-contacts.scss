@@ -1,0 +1,29 @@
+.field-contacts__label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  align-self: self-start;
+  margin: 0;
+  margin-left: 36px;
+}
+
+.field-contacts__title {
+  padding-top: 24px;
+}
+
+.field-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field-contacts__input {
+  width: 280px;
+  height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 16px 16px;
+  box-sizing: border-box;
+}
+

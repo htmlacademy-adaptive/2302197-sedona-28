@@ -1,0 +1,11 @@
+.field-sights__list {
+  @include list-reset;
+}
+
+.field-sights__title {
+  padding-top: 24px;
+}
+
+.field-sights__label {
+  text-transform: none;
+}

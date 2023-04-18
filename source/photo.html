@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -11,31 +12,31 @@
     <a class="catalog-header__logo">
       <img src="img/logotype.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="catalog-nav">
-      <button class="catalog-nav__toggle" type="button">
+    <nav class="page-nav">
+      <button class="page-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="catalog-nav__wrapper">
-        <ul class="catalog-nav__list site-list">
+      <div class="page-nav__wrapper">
+        <ul class="page-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="page-nav__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="page-nav__link">
               Фото и видео
             </a>
           </li>
         </ul>
-        <ul class="catalog-nav__list user-list">
+        <ul class="page-nav__list user-list">
           <li class="user-list__item">
-            <a>
+            <a class="page-nav__link" href="form.html">
               Форма Отзыва
             </a>
           </li>
           <li class="user-list__item">
-            <a href="#">
+            <a class="page-nav__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -56,39 +57,39 @@
     <ul class="pictures-catalog">
       <li class="pictures-catalog__item expance">
         <img src="img/expanse.jpg" width="280" height="280" alt="Вид на горизонт">
-        <h3 class="expance__title">Неродные просторы</h3>
-        <span class="expance__author">Автор фото: Борис</span>
+        <h3 class="pictures-catalog__title expance__title">Неродные просторы</h3>
+        <span class="pictures-catalog__description expance__author">Автор фото: Борис</span>
         <button class="expance__button" type="button">
           <span class="visually-hidden">Поставить лайк</span>
         </button>
-        <span class="expance__number">1350</span>
+        <span class="pictures-catalog__number expance__number">1350</span>
         <span class="visually-hidden">Лайков</span>
       </li>
       <li class="pictures-catalog__item nature">
         <img src="img/nature.jpg" width="280" height="280" alt="Вид на растительность">
-        <h3 class="nature__title">Местная растительность</h3>
-        <span class="nature__author">Автор фото: Cергей</span>
-        <span class="nature__number">143</span>
+        <h3 class="pictures-catalog__title nature__title">Местная растительность</h3>
+        <span class="pictures-catalog__description nature__author">Автор фото: Cергей</span>
+        <span class="pictures-catalog__number nature__number">143</span>
         <span class="visually-hidden">Лайков</span>
       </li>
       <li class="pictures-catalog__item road-on-north">
         <img src="img/road-on-north.jpg" width="280" height="280" alt="Вид на дорогу на север">
-        <h3 class="road-on-north__title">Дорога на север</h3>
-        <span class="road-on-north__author">Автор фото: Петр</span>
-        <span class="road-on-north__number">96</span>
+        <h3 class="pictures-catalog__title road-on-north__title">Дорога на север</h3>
+        <span class="pictures-catalog__description road-on-north__author">Автор фото: Петр</span>
+        <span class="pictures-catalog__number road-on-north__number">96</span>
         <span class="visually-hidden">Лайков</span>
       </li>
       <li class="pictures-catalog__item bridge">
         <img src="img/bridge-catalog.jpg" width="280" height="280" alt="Вид на мост Дьявола">
-        <h3 class="bridge__title">Мост Дьявола</h3>
-        <span class="bridge__author">Автор фото: Антон</span>
-        <span class="bridge__number">254</span>
+        <h3 class="pictures-catalog__title bridge__title">Мост Дьявола</h3>
+        <span class="pictures-catalog__description bridge__author">Автор фото: Антон</span>
+        <span class="pictures-catalog__number bridge__number">254</span>
         <span class="visually-hidden">Лайков</span>
       </li>
     </ul>
     <section class="catalog-video">
       <h2 class="visually-hidden">Видеопрезентация</h2>
-      <span class="catalog-video__title">Все еще сомневаетесь?</span>
+      <span class="catalog-video__title title">Все еще сомневаетесь?</span>
       <p class="catalog-video__description">Смотрите видеопрезентацию и скорее за билетами,
         пока они не подорожали в очередной раз!</p>
       <img src="img/video-catalog.jpg" width="280" height="177" alt="Видеопрезентация">

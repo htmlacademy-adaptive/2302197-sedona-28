@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -11,31 +12,31 @@
     <a class="main-header__logo">
       <img src="img/logotype.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="page-nav">
+      <button class="page-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+      <div class="page-nav__wrapper">
+        <ul class="page-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="page-nav__link">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="page-nav__link" href="photo.html">
               Фото и видео
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="page-nav__list user-list">
           <li class="user-list__item">
-            <a href="form.html">
+            <a class="page-nav__link" href="form.html">
               Форма Отзыва
             </a>
           </li>
           <li class="user-list__item">
-            <a href="#">
+            <a class="page-nav__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -59,62 +60,68 @@
         </header>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__number">— №1 —</span>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="advantages__city">
+              <h3 class="advantages__title advantages__title--optional">Настоящий городок</h3>
+              <span class="advantages__number advantages__number--optional">— №1 —</span>
+              <p class="advantages__description advantages__description--optional">Седона не аттракцион для туристов,
+                там течет своя жизнь</p>
+            </div>
             <div class="advantages__image advantages__image--wrapper">
               <img src="img/photo-city.jpg" width="520" height="260" alt="Вид на город">
             </div>
             <div class="advantages__infrastructure infrastructure">
               <ul class="infrastructure__list">
                 <li class="infrastructure__item">
-                  <h4 class="infrastructure__title">Жилье</h4>
+                  <h4 class="infrastructure__title title">Жилье</h4>
                   <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле,
                     все как в кино!</p>
                 </li>
                 <li class="infrastructure__item">
-                  <h4 class="infrastructure__title">Еда</h4>
+                  <h4 class="infrastructure__title title">Еда</h4>
                   <p class="infrastructure__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </li>
                 <li class="infrastructure__item">
-                  <h4 class="infrastructure__title">Сувениры</h4>
+                  <h4 class="infrastructure__title title">Сувениры</h4>
                   <p class="infrastructure__description">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </div>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <span class="">— №2 —</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="advantages__bridge">
+              <h3 class="advantages__title advantages__title--optional">Там есть мост дьявола</h3>
+              <span class="advantages__number advantages__number--optional">— №2 —</span>
+              <p class="advantages__description advantages__description--optional">Да, по нему можно пройти! Если вы
+                осмелитесь, конечно</p>
+            </div>
             <div class="advantages__image advantages__image--wrapper">
               <img src="img/photo-bridge.jpg" width="520" height="260" alt="Вид на Гранд каньон">
             </div>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="">— №3 —</span>
+          <li class="advantages__item advantages__item--color ">
+            <h3 class="advantages__title title">Небольшая площадь</h3>
+            <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="">— №4 —</span>
+          <li class="advantages__item advantages__item--color">
+            <h3 class="advantages__title title">Красивая дорога</h3>
+            <span class="advantages__number">— №4 —</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <span class="">— №5 —</span>
+          <li class="advantages__item advantages__item--color">
+            <h3 class="advantages__title title">Мало туристов</h3>
+            <span class="advantages__number">— №5 —</span>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </div>
     </section>
-    <section class="subscription">
+    <section class="search">
       <h2 class="visually-hidden">Поиск</h2>
-      <span class="subscription__title">Заинтересовались?</span>
-      <p class="subscription__description">Укажите предполагаемые даты поездки,
+      <span class="search__title title">Заинтересовались?</span>
+      <p class="search__description">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="subscription__search" type="button">Найти Гостиницу</button>
+      <button class="search__button button" type="button">Найти Гостиницу</button>
       <!--карта-->
     </section>
   </main>

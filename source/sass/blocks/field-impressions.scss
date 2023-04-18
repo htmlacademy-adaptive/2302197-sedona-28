@@ -1,0 +1,11 @@
+.field-impressions__list {
+  @include list-reset;
+}
+
+.field-impressions__label {
+  text-transform: none;
+}
+
+.field-impressions__title {
+  padding-top: 24px;
+}

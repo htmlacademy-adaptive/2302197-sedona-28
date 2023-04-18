@@ -1,0 +1,24 @@
+.pictures-catalog {
+  @include list-reset;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pictures-catalog__title {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.pictures-catalog__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.pictures-catalog__number {
+  font-size: 14px;
+  line-height: 21px;
+  color:#333333;
+}
