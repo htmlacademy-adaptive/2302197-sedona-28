@@ -1,3 +1,9 @@
+.field-emotions {
+  @media (min-width:$tablet-width) {
+    grid-column: 1/3;
+    }
+}
+
 .field-emotions__description {
   width: 279px;
   height: 150px;
@@ -9,6 +15,14 @@
   border: none;
   background-color:#F2F2F2;
   padding: 16px 16px;
+
+  @media (min-width:$tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 768px;
+  }
 }
 
 .field-emotions__title {

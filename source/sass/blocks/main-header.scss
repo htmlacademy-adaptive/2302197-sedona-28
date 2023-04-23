@@ -1,0 +1,13 @@
+.main-header {
+  display: flex;
+  min-height: 56px;
+  width: 320px ;
+}
+
+.main-header__logo {
+  min-width: 185px;
+  min-height: 96px;
+  position: absolute;
+  left: 25%;
+}
+

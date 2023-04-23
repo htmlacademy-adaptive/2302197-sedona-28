@@ -4,6 +4,7 @@
 
 //миксины и переменные
 @import "./mixins.scss";
+@import "./variables.scss";
 
 //блоки компонентов
 @import "./blocks/advantages.scss";
@@ -24,6 +25,9 @@
 @import "./blocks/field-sights.scss";
 @import "./blocks/field-emotions.scss";
 @import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/title.scss";
+@import "./blocks/expance.scss";
 
 
 

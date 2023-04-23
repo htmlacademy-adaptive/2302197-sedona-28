@@ -11,7 +11,6 @@
 .field__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .field__input {
@@ -22,4 +21,12 @@
   width: 280px;
   height: 58px;
   box-sizing: border-box;
+
+  @media (min-width:$tablet-width) {
+    width: 295px;
+    }
+
+  @media (min-width:$desktop-width) {
+    width: 430px;
+    }
 }

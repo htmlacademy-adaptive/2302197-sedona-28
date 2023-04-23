@@ -7,12 +7,14 @@
 
 .infrastructure__list {
   @include list-reset;
+  width: 320px;
 }
 
 .infrastructure__item {
-  padding-left: 18px;
+  padding-top: 33px;
+  text-align: start;
+  padding-left: 65px;
   padding-right: 18px;
-  padding-top: 33px
 }
 
 .infrastructure__item:last-child {
