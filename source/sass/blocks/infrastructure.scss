@@ -7,7 +7,13 @@
 
 .infrastructure__list {
   @include list-reset;
-  width: 320px;
+  min-width: 320px;
+
+  @media (min-width:$tablet-width) {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 .infrastructure__item {
