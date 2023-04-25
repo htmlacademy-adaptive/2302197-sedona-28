@@ -17,11 +17,12 @@
     grid-auto-flow: dense;
     background-color: #FFFFFF;
     min-height: 56px;
+    align-items: center;
   }
 &::before {
     content: "";
     grid-column: 3/4;
-    grid-row: span 2;
+    grid-row: span 1;
   }
 }
 
