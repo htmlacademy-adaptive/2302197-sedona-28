@@ -3,13 +3,13 @@
   padding-left: 20px;
   padding-right: 20px;
 
+
   @media (min-width:$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
 
   @media (min-width:$desktop-width) {
-    display: grid;
     grid-template-columns: repeat(3,1fr);
   }
 }
