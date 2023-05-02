@@ -1,18 +1,20 @@
 .field-sights {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/3;
-    }
+  }
 }
 
 .field-sights__list {
   @include list-reset;
-  @media (min-width:$tablet-width) {
-    display: grid;;
-    }
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    }
+  }
 }
 
 .field-sights__title {
@@ -24,7 +26,7 @@
 }
 
 .field-sights__item--right {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 2/3;
-    }
+  }
 }

@@ -5,7 +5,6 @@
   align-self: self-start;
   margin: 0;
   margin-left: 36px;
-
 }
 
 .field__wrapper {
@@ -22,11 +21,11 @@
   height: 58px;
   box-sizing: border-box;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 295px;
-    }
+  }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 430px;
-    }
+  }
 }

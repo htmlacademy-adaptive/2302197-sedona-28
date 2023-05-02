@@ -1,18 +1,25 @@
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 320px;
   text-align: center;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
   margin: 0;
 }
 
-body img {
+img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: none;
+  display: block;
 }

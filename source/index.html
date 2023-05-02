@@ -13,9 +13,20 @@
     <a class="main-header__logo">
       <img src="img/logotype.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="page-nav">
+    <!-- <button class="main-header__menu" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.9 0H0V4H22.9V0Z" fill="CurrentColor"/>
+        <path d="M22.9 9H0V13H22.9V9Z" fill="CurrentColor"/>
+        <path d="M22.9 18H0V22H22.9V18Z" fill="CurrentColor"/>
+        </svg>
+    </button> -->
+    <nav class="page-nav page-nav--opened page-nav--nojs">
       <button class="page-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Закрыть меню</span>
+        <svg class="page-nav__open" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="CurrentColor"/>
+          </svg>
       </button>
       <div class="page-nav__wrapper">
         <ul class="page-nav__list site-list">
@@ -48,7 +59,7 @@
       <h1 class="visually-hidden title">Добро пожаловать в Седону</h1>
       <img class="intro__welcome" src="img/intro-text.svg" width="282" height="214" alt="Приветствие».">
     </section>
-    <section class="  ">
+    <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages__wrapper">
         <header class="advantages__header">
@@ -65,7 +76,7 @@
               <p class="advantages__description advantages__description--optional">Седона не аттракцион для туристов,
                 там течет своя жизнь</p>
             </div>
-            <div class="advantages__image advantages__image--wrapper">
+            <div class="advantages__image advantages__image--wrapper advantages__image--city">
               <img src="img/photo-city.jpg" width="520" height="260" alt="Вид на город">
             </div>
               <ul class="infrastructure__list">
@@ -91,7 +102,7 @@
               <p class="advantages__description advantages__description--optional">Да, по нему можно пройти! Если вы
                 осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image advantages__image--wrapper">
+            <div class="advantages__image advantages__image--wrapper advantages__image--bridge">
               <img src="img/photo-bridge.jpg" width="520" height="260" alt="Вид на Гранд каньон">
             </div>
           </li>
@@ -119,7 +130,10 @@
       <p class="search__description">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search__button button" type="button">Найти Гостиницу</button>
-      <!--карта-->
+    </section>
+    <section class="location">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.66517184975!2d-111.8016628118553!3d34.86303429322318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1683022765347!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -143,6 +157,7 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

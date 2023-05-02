@@ -12,11 +12,10 @@
 .advantages__list {
   @include list-reset;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 .advantages__intro {
@@ -48,67 +47,79 @@
 }
 
 .advantages__city {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding-top: 37px;
   padding-bottom: 37px;
   padding-left: 18px;
   padding-right: 18px;
   min-height: 211px;
-  width: 320px;
+  min-width: 256px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .advantages__bridge {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding-top: 37px;
   padding-bottom: 37px;
   padding-left: 18px;
   padding-right: 18px;
   min-height: 191px;
-  width: 320px;
+  min-width: 256px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
 }
 
 .advantages__title--optional {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages__number--optional {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages__description--optional {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages__item--color {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 24px;
   padding-bottom: 24px;
-  width: 320px;
   min-height: 165px;
   box-sizing: border-box;
 }
 
 .advantages__item:nth-child(1) {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/4;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 }
 
 .advantages__item:nth-child(2) {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/4;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 }
 
-
-.advantages__image--wrapper {
+.advantages__image--city {
   overflow: hidden;
-  width: 320px;
   grid-column: 2/4;
+}
+
+.advantages__image--bridge {
+  grid-column: 1/3;
 }
