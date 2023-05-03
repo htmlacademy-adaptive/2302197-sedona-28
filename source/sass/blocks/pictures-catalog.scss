@@ -2,6 +2,9 @@
   @include list-reset;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: start;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
 
   @media (min-width: $tablet-width) {
@@ -17,6 +20,9 @@
 .pictures-catalog__title {
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-top: 15px;
+
 }
 
 .pictures-catalog__description {
@@ -25,10 +31,15 @@
   color: #333333;
   font-weight: 400;
   text-transform: none;
+  margin-top: 12px;
 }
 
 .pictures-catalog__number {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+.pictures-catalog__item span {
+  display: block;
 }

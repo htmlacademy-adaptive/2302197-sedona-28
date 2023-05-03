@@ -1,15 +1,20 @@
+.field {
+  padding-bottom: 39px;
+}
+
 .field__label {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   align-self: self-start;
   margin: 0;
-  margin-left: 36px;
+  margin-left: 16px;
 }
 
 .field__wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .field__input {
@@ -17,7 +22,7 @@
   line-height: 26px;
   font-weight: 700;
   padding: 16px 16px;
-  width: 280px;
+  min-width: 280px;
   height: 58px;
   box-sizing: border-box;
 

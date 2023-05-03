@@ -5,8 +5,8 @@
 }
 
 .field-emotions__description {
-  width: 279px;
-  height: 150px;
+  width: 100%;
+  min-height: 150px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -15,14 +15,7 @@
   border: none;
   background-color: #f2f2f2;
   padding: 16px 16px;
-
-  @media (min-width: $tablet-width) {
-    width: 648px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 768px;
-  }
+  box-sizing: border-box;
 }
 
 .field-emotions__title {
