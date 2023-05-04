@@ -10,10 +10,16 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -23,6 +29,10 @@
   margin: 0;
   margin-top: 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    margin-left: 20px;
+  }
 }
 
 .pictures-catalog__description {
@@ -32,6 +42,10 @@
   font-weight: 400;
   text-transform: none;
   margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .pictures-catalog__number {

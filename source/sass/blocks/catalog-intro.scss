@@ -1,17 +1,18 @@
-.intro {
+.catalog-intro {
   background-image: url("/img/photo-mountains.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82b3d3;
-  background-position: center;
   min-width: 320px;
   min-height: 389px;
   box-sizing: border-box;
-  padding-top: 90px;
+  padding-top: 52px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
+    padding-top: 95px;
+  }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 103px;
   }
 }
-

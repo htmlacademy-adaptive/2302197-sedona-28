@@ -1,5 +1,9 @@
 .field {
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
 }
 
 .field__label {
@@ -27,10 +31,16 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 295px;
+    min-width: 295px;
   }
 
   @media (min-width: $desktop-width) {
     width: 430px;
+  }
+}
+
+.field__title {
+  @media (min-width: $tablet-width) {
+   font-size: 21px;
   }
 }

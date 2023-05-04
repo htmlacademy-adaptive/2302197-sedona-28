@@ -1,8 +1,9 @@
 .field-contacts {
- margin-top: 24px;
- margin-bottom: 34px;
-
-}
+  @media (max-width: $mobile-width-only) {
+    margin-top: 24px;
+    margin-bottom: 34px;
+    }
+  }
 
 .field-contacts__label {
   font-size: 14px;
@@ -16,6 +17,7 @@
 .field-contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .field-contacts__input {
@@ -28,11 +30,16 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 295px;
+    min-width: 295px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 430px;
+    min-width: 430px;
   }
 }
 
+.field-contacts__title {
+    @media (min-width: $tablet-width) {
+     font-size: 21px;
+    }
+  }
