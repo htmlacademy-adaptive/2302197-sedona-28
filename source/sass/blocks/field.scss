@@ -31,11 +31,11 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-width: 295px;
+    width: calc(100% - 28px);
   }
 
   @media (min-width: $desktop-width) {
-    width: 430px;
+    width: calc(100% - 49px);
   }
 }
 
