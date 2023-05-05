@@ -45,50 +45,6 @@
   }
 }
 
-/*
-.page-nav__wrapper {
-  background-color: #81b3d2;
-  min-width: 320px;
-  min-height: 223px;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    min-height: 56px;
-  }
-}
-*/
-
-.page-nav__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  border: none;
-  background-color: inherit;
-}
-
-.page-nav__toggle svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #FFFFFF;
-
-  &:hover {
-    color: #FFFFFF;
-    opacity:0.6;
-  }
-
-  &:active {
-    color: #FFFFFF;
-    opacity:0.3;
-  }
-}
-
 .page-nav--closed {
 @media (max-width: $mobile-width-only) {
 display: none;
@@ -111,8 +67,18 @@ display: none;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 
+  .page-nav--opened::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/icon-cross.svg);
+    width: 22px;
+    height: 22px;
+    top: 17px;
+    right: 20px;
+  }
+
+
 .page-nav--nojs .page-nav--closed {
   display: none;
   }
-
 
