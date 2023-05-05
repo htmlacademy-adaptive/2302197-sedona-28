@@ -2,8 +2,8 @@
   @media (max-width: $mobile-width-only) {
     margin-top: 24px;
     margin-bottom: 34px;
-    }
   }
+}
 
 .field-contacts__label {
   font-size: 14px;
@@ -47,7 +47,7 @@
 }
 
 .field-contacts__title {
-    @media (min-width: $tablet-width) {
-     font-size: 21px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
   }
+}

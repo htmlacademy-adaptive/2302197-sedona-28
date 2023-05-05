@@ -1,5 +1,6 @@
 .field-sights {
   padding-bottom: 34px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
   }
@@ -23,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-   }
+  }
 }
 
 .field-sights__label {

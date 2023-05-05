@@ -4,10 +4,9 @@
   min-height: 56px;
 
   @media (max-width: $mobile-width-only) {
-    background-color: #81B3D2;
+    background-color: #81b3d2;
     position: absolute;
-    }
-
+  }
 }
 
 .page-nav__link {
@@ -23,7 +22,6 @@
   @media (min-width: $tablet-width) {
     color: #766357;
   }
-
 }
 
 .page-nav__list {
@@ -46,39 +44,39 @@
 }
 
 .page-nav--closed {
-@media (max-width: $mobile-width-only) {
-display: none;
-}
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .site-list__item a {
   padding-left: 50px;
   padding-right: 50px;
-  }
+}
 
 .page-nav--opened::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 7px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-  }
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
 
-  .page-nav--opened::after {
-    content: "";
-    position: absolute;
-    background-image: url(/img/icon-cross.svg);
-    width: 22px;
-    height: 22px;
-    top: 17px;
-    right: 20px;
-  }
+.page-nav--opened::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/icon-cross.svg);
+  width: 22px;
+  height: 22px;
+  top: 17px;
+  right: 20px;
+}
 
 
 .page-nav--nojs .page-nav--closed {
   display: none;
-  }
+}
 
