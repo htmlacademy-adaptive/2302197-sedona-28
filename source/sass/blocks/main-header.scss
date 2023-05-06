@@ -28,17 +28,18 @@
   position: absolute;
   top: 0;
   right: 0;
-  color: #81b3d2;
+  color: #81B3D2;
 
   &:hover {
-    opacity: 0.6;
+    opacity:0.6;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity:0.3;
   }
 }
 
+@media (max-width: $mobile-width-only) {
 .main-header__toggle {
   position: absolute;
   top: 17px;
@@ -50,26 +51,6 @@
   cursor: pointer;
   border: none;
   background-color: inherit;
-
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(/img/icon-menu.svg);
-      width: 22px;
-      height: 22px;
-      top: 0;
-      left: 0;
-    }
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   background-image: url(/img/icon-cross.svg);
-    //   width: 22px;
-    //   height: 22px;
-    //   top: 0;
-    //   left: 0;
-    // }
-  }
 }
+}
+
