@@ -9,6 +9,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 
 .main-header__menu {
@@ -39,8 +40,8 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
 .main-header__toggle {
+  @media (max-width: $mobile-width-only) {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -51,6 +52,11 @@
   cursor: pointer;
   border: none;
   background-color: inherit;
+  z-index: 3;
+}
+
+@media (min-width: $tablet-width) {
+  display: none;
 }
 }
 

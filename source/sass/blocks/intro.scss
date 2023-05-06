@@ -8,9 +8,22 @@
   min-height: 389px;
   box-sizing: border-box;
   padding-top: 90px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/intro-triangle.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background-position: center;
   }
 }
 
