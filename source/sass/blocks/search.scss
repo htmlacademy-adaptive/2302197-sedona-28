@@ -1,6 +1,6 @@
 .search {
   padding-top: 38px;
-  padding-bottom: 32px;
+  padding-bottom: 49px;
   padding-left: 18px;
   padding-right: 18px;
 
@@ -13,6 +13,12 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 66px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
   }
 }
 
@@ -45,5 +51,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
+    margin-top: 44px;
   }
 }

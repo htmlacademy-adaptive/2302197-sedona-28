@@ -53,6 +53,16 @@
   background-image: url("/img/icon-house.svg");
   left: 18px;
   top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 77px;
+    height: 72px;
+    background-size: cover;
+  }
 }
 
 .infrastructure__item--food::before {
@@ -63,6 +73,16 @@
   background-image: url("/img/icon-burger.svg");
   left: 18px;
   top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 62px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 75px;
+    height: 68px;
+    background-size: cover;
+  }
 }
 
 .infrastructure__item--souvenirs::before {
@@ -73,4 +93,14 @@
   background-image: url("/img/icon-gift.svg");
   left: 22px;
   top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 64px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65px;
+    height: 77px;
+    background-size: cover;
+  }
 }

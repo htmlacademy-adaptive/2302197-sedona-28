@@ -203,8 +203,20 @@
 .advantages__image--city {
   overflow: hidden;
   grid-column: 2/4;
+
+  @media (min-width: $tablet-width) {
+  img {
+    height: 256px;
+  }
+}
 }
 
 .advantages__image--bridge {
   grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    img {
+      height: 256px;
+    }
+  }
 }
