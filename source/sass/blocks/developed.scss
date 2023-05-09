@@ -2,9 +2,20 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .developed__text {
   align-self: center;
   margin-right: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.developed__link {
+  display: contents;
 }

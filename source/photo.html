@@ -9,32 +9,33 @@
 </head>
 
 <body class="page-body">
+  <div class="page-body__container">
   <header class="main-header">
     <a class="main-header__logo">
       <img src="img/logotype.svg" width="185" height="96" alt="Седона">
     </a>
+    <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">Открыть и закрыть меню</span>
+    </button>
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="page-nav__wrapper">
+      <div class="page-nav__wrapper page-nav--opened page-nav--nojs">
         <ul class="page-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item ">
             <a class="page-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="page-nav__link">
+          <li class="site-list__item site-list__item--active">
+            <a class="page-nav__link page-nav__link--current">
               Фото и видео
             </a>
           </li>
-          <li class="user-list__item">
+          <li class="site-list__item">
             <a class="page-nav__link" href="form.html">
               Форма Отзыва
             </a>
           </li>
-          <li class="user-list__item">
+          <li class="site-list__item">
             <a class="page-nav__link" href="#">
               HTML Academy
             </a>
@@ -114,6 +115,8 @@
       <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
     </div>
   </footer>
+  <script src="script.js"></script>
+  </div>
 </body>
 
 </html>

@@ -7,6 +7,10 @@
   max-width: 280px;
   flex-wrap: wrap;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .social__item {
@@ -15,4 +19,9 @@
   margin-top: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
 }

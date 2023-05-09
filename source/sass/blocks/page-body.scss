@@ -1,0 +1,20 @@
+.page-body {
+  @media (min-width: $desktop-width) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1280px;
+  background-color: #F2F2F2;
+  }
+}
+
+.page-body__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}

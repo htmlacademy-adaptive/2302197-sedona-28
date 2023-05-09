@@ -12,6 +12,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
+    padding-bottom: 91px;
+
+    img {
+      min-width: 461px;
+      min-height: 350px;
+    }
   }
 
   &::before {
