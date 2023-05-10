@@ -3,9 +3,6 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: start;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -52,7 +49,36 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-left: 39px;
 }
+
+.pictures-catalog__item {
+  @media (max-width: $mobile-width-only) {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  }
+}
+
+.pictures-catalog__item button {
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 21px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/img/like-icon.svg);
+    width: 23px;
+    height: 21px;
+    top: 0;
+    left: 0;
+  }
+}
+
 
 .pictures-catalog__item span {
   display: block;

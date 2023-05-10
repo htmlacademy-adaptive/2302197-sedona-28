@@ -1,18 +1,53 @@
 .catalog-intro {
   background-image: url("/img/photo-mountains.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-color: #82b3d3;
   min-width: 320px;
-  min-height: 389px;
+  min-height: 158px;
   box-sizing: border-box;
   padding-top: 52px;
+  padding-bottom: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+  background-position-y:bottom;
+
+  @media (max-width: $mobile-width-only) {
+    background-position-x: -291px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 95px;
+    background-size: cover;
+    min-height: 290px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 103px;
+    min-height: 301px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/intro-triangle.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+  }
+
+  img {
+    @media (min-width: $tablet-width) {
+    width: 456px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+    height: 79px;
+  }
+}
 }

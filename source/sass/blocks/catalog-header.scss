@@ -3,10 +3,22 @@
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     br {
       display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-position: center;
     }
   }
 
@@ -22,7 +34,7 @@
 }
 
 .catalog-header__title {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   margin: 0;
 
