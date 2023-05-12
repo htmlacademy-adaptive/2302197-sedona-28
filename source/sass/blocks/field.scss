@@ -1,5 +1,18 @@
 .field {
-  padding-bottom: 39px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 115%;
+      height: 1px;
+      left: -20px;
+      bottom: 0;
+      background-position: center;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 63px;
@@ -29,6 +42,9 @@
   min-width: 280px;
   height: 58px;
   box-sizing: border-box;
+  background-color: #F2F2F2;
+  border: none;
+
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 28px);

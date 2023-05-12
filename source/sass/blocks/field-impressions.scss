@@ -8,6 +8,7 @@
 
 .field-impressions__list {
   @include list-reset;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -20,8 +21,19 @@
   }
 }
 
+.field-impressions__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: #F2F2F2;
+  margin-top: -10px;
+}
+
 .field-impressions__label {
   text-transform: none;
+  padding-left: 62px;
+
 }
 
 .field-impressions__title {
@@ -44,4 +56,15 @@
 
 .field-impressions__item {
   margin-top: 26px;
+}
+
+.field-impressions__input[type="radio"]:checked + .field-impressions__mark::before,
+.field-impressions__input[type="radio"]:checked + .field-impressions__mark::after {
+  position: absolute;
+  background-image: url(/img/icon-radio.svg);
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  content: "";
 }

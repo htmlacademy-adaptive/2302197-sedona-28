@@ -8,6 +8,7 @@
 
 .field-sights__list {
   @include list-reset;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -29,6 +30,7 @@
 
 .field-sights__label {
   text-transform: none;
+  padding-left: 62px;
 }
 
 .field-sights__item--right {
@@ -39,4 +41,24 @@
 
 .field-sights__item {
   margin-top: 26px;
+}
+
+.field-sights__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  margin-top: -10px;
+}
+
+.field-sights__input[type="checkbox"]:checked + .field-sights__mark::before,
+.field-sights__input[type="checkbox"]:checked + .field-sights__mark::after {
+  position: absolute;
+  background-image: url(/img/tick.svg);
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  content: "";
 }
