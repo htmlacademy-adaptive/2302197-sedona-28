@@ -1,27 +1,90 @@
 .feedback-form {
   display: grid;
-  padding-top: 24px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 22px;
+
+  ul {
+    padding-top: 30px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 64px;
+
+    ul {
+      padding-top: 38px;
+    }
   }
+
+    .field-impressions__list {
+      @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+      }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 55px;
+      padding-left: 53px;
+      padding-right: 53px;
+    }
+  }
+
+    .field-sights__list {
+      @media (min-width: $tablet-width) {
+      padding-left: 84px;
+      padding-right: 84px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-top: 69px;
+        padding-left: 44px;
+        padding-right: 44px;
+      }
+    }
 
   @media (min-width: $desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  input:hover {
+    background-color: #E5E5E5;
+  }
+
+  input:active {
+    background-color: #FFFFFF;
+    border: 4px solid #E5E5E5;
   }
 }
 
 .feedback-form__fieldset {
   border: none;
   padding: 0;
-  padding-top: 24px;
   padding-bottom: 34px;
+  position: relative;
+  margin-top: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 115%;
+      height: 1px;
+      left: -20px;
+      bottom: 0;
+      background-position: center;
+    }
+  }
+}
+
+.feedback-form .field-emotions::before {
+  @media (max-width: $mobile-width-only) {
+  display: none;
+  }
 }
 
 .feedback-form .field {
@@ -36,9 +99,8 @@
   color: rgba(51, 51, 51, 0.6);
 
   @media (min-width: $tablet-width) {
-    align-self: center;
     color: #333333;
-    padding-top: 71px;
+    margin-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,12 +109,12 @@
 }
 
 .feedback-form__button {
-  margin-top: 56px;
+  margin-top: 32px;
   min-width: 280px;
   min-height: 58px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 48px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {

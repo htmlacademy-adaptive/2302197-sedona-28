@@ -16,6 +16,16 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 63px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 1px;
+      height: 100%;
+      right: 0px;
+      top: -24px;
+    }
   }
 }
 
@@ -32,6 +42,15 @@
   display: flex;
   flex-direction: column;
   margin-top: 16px;
+
+  &:first-of-type {
+    margin-top: 0;
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+  }
 }
 
 .field__input {

@@ -3,6 +3,38 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 1px;
+      left: 0px;
+      top: -26px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 1px;
+      right: 0px;
+      top: -26px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
   }
 }
 
@@ -21,8 +53,6 @@
 }
 
 .field-sights__title {
-  padding-top: 24px;
-
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
@@ -41,6 +71,29 @@
 
 .field-sights__item {
   margin-top: 26px;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+    }
+
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
 }
 
 .field-sights__mark {
@@ -50,6 +103,14 @@
   border-radius: 4px;
   background-color: #F2F2F2;
   margin-top: -10px;
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:active {
+    background-color: #D5D5D5;
+  }
 }
 
 .field-sights__input[type="checkbox"]:checked + .field-sights__mark::before,

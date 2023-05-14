@@ -3,8 +3,42 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
+    margin-top: 39px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 1px;
+      left: 0px;
+      top: -12px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 1px;
+      right: 0px;
+      top: -12px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
   }
 }
+
 
 .field-impressions__list {
   @include list-reset;
@@ -28,6 +62,14 @@
   border-radius: 50px;
   background-color: #F2F2F2;
   margin-top: -10px;
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:active {
+    background-color: #D5D5D5;
+  }
 }
 
 .field-impressions__label {
@@ -37,14 +79,8 @@
 }
 
 .field-impressions__title {
-  padding-top: 24px;
-
   @media (min-width: $tablet-width) {
     font-size: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 71px;
   }
 }
 
@@ -55,7 +91,23 @@
 }
 
 .field-impressions__item {
-  margin-top: 26px;
+  margin-top: 36px;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  &:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
 }
 
 .field-impressions__input[type="radio"]:checked + .field-impressions__mark::before,

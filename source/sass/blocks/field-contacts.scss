@@ -1,6 +1,17 @@
 .field-contacts {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
-    margin-top: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #E5E5E5;
+      width: 115%;
+      height: 1px;
+      left: -20px;
+      bottom: 0;
+      background-position: center;
+    }
   }
 }
 
@@ -18,12 +29,47 @@
   flex-direction: column;
   margin-top: 16px;
 
+  &:first-of-type {
+    margin-top: 0;
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 28px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 49px;
+  }
+}
+
+.field-contacts__wrapper--phone {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(/img/phone.svg);
+  }
+}
+
+.field-contacts__wrapper--e-mail {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(/img/mail.svg);
   }
 }
 
