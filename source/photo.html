@@ -56,17 +56,34 @@
       </header>
       <ul class="pictures-catalog">
         <li class="pictures-catalog__item expance">
-          <img src="img/expanse.jpg" width="280" height="280" alt="Вид на горизонт">
-          <h3 class="pictures-catalog__title expance__title">Неродные просторы</h3>
-          <span class="pictures-catalog__description expance__author">Автор фото: Борис</span>
-          <button class="expance__button" type="button">
-            <span class="visually-hidden">Поставить лайк</span>
-            <span class="pictures-catalog__number expance__number">1350</span>
-            <span class="visually-hidden">Лайков</span>
-          </button>
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/expanse-desktop@1x.jpg 1x,
+            img/expanse-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/expanse-tablet@1x.jpg 1x,
+            img/expanse-tablet@2x.jpg 2x">
+            <img src="img/expanse.jpg" width="280" height="280" alt="Вид на горизонт">
+          </picture>
+
+          <div class="pictures-catalog__text">
+            <h3 class="pictures-catalog__title expance__title">Неродные просторы</h3>
+            <span class="pictures-catalog__description expance__author">Автор фото: Борис</span>
+            <button class="expance__button" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+              <span class="pictures-catalog__number expance__number">1350</span>
+              <span class="visually-hidden">Лайков</span>
+            </button>
+          </div>
+
         </li>
         <li class="pictures-catalog__item nature">
-          <img src="img/nature.jpg" width="280" height="280" alt="Вид на растительность">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/nature-desktop@1x.jpg 1x,
+            img/nature-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/nature-tablet@1x.jpg 1x,
+            img/nature-tablet@2x.jpg 2x">
+            <img src="img/nature.jpg" width="280" height="280" srcset="img/nature@2x.jpg 2x"
+              alt="Вид на растительность">
+          </picture>
           <h3 class="pictures-catalog__title nature__title">Местная растительность</h3>
           <span class="pictures-catalog__description nature__author">Автор фото: Cергей</span>
           <button class="nature__button" type="button">
@@ -76,7 +93,14 @@
           </button>
         </li>
         <li class="pictures-catalog__item road-on-north">
-          <img src="img/road-on-north.jpg" width="280" height="280" alt="Вид на дорогу на север">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/road-on-north-desktop@1x.jpg 1x,
+            img/road-on-north-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/road-on-north-tablet@1x.jpg 1x,
+            img/road-on-north-tablet@2x.jpg 2x">
+            <img src="img/road-on-north.jpg" width="280" height="280" srcset="source/img/road-on-north-tablet@2x.jpg 2x"
+              alt="Вид на дорогу на север">
+          </picture>
           <h3 class="pictures-catalog__title road-on-north__title">Дорога на север</h3>
           <span class="pictures-catalog__description road-on-north__author">Автор фото: Петр</span>
           <button class="road-on-north__button" type="button">
@@ -86,7 +110,13 @@
           </button>
         </li>
         <li class="pictures-catalog__item bridge">
-          <img src="img/bridge-catalog.jpg" width="280" height="280" alt="Вид на мост Дьявола">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/bridge-catalog-desktop@1x.jpg 1x,
+            img/bridge-catalog-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/bridge-catalog-tablet@1x.jpg 1x,
+            img/bridge-catalog-tablet@2x.jpg 2x">
+            <img src="img/bridge-catalog.jpg" width="280" height="280" srcset="img/bridge-catalog@2x.jpg" alt="Вид на мост Дьявола">
+          </picture>
           <h3 class="pictures-catalog__title bridge__title">Мост Дьявола</h3>
           <span class="pictures-catalog__description bridge__author">Автор фото: Антон</span>
           <button class="bridge__button" type="button">

@@ -13,6 +13,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-bottom: 91px;
+    background-image: url("/img/photo-mountains-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(/img/photo-mountains-tablet@2x.jpg);
+    }
 
     img {
       min-width: 461px;
