@@ -1,0 +1,15 @@
+.location {
+  display: grid;
+
+  iframe {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+
+  img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+}
+
