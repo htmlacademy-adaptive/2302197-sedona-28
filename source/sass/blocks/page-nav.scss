@@ -35,6 +35,17 @@
   @media (min-width: $tablet-width) {
     color: #000000;
   }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+    color: #81B3D2;
+    }
+  }
+
+  &:active {
+    color: rgb(0, 0, 0, 0.3)
+  }
+
 }
 
 .page-nav__link--current {
