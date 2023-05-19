@@ -10,6 +10,18 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 1;
+
+  // position: relative;
+  // display: block;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 185px;
+  //   height: 96px;
+  //   mask-image: url(/img/logotype.svg#logotype);
+
+  // }
 }
 
 .main-header__menu {
