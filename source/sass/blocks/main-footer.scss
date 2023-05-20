@@ -25,4 +25,12 @@
   text-decoration: none;
   color: inherit;
   font-size: 21px;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1)
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
 }

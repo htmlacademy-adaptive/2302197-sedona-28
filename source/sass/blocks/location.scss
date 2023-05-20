@@ -1,5 +1,6 @@
 .location {
   display: grid;
+  position: relative;
 
   iframe {
     grid-row: 1/2;
@@ -10,6 +11,18 @@
   img {
     grid-row: 1/2;
     grid-column: 1/2;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url(/img/map-marker.svg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
   }
 }
 

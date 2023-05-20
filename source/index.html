@@ -27,7 +27,7 @@
         <span class="visually-hidden">Открыть и закрыть меню</span>
       </button>
       <nav class="page-nav">
-        <div class="page-nav__wrapper page-nav--opened page-nav--nojs">
+        <div class="page-nav__wrapper page-nav--closed page-nav--nojs">
           <ul class="page-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="page-nav__link page-nav__link--current">
@@ -122,7 +122,7 @@
               </div>
             </li>
             <li class="advantages__item advantages__item--color ">
-              <h3 class="advantages__title title">Небольшая площадь</h3>
+              <h3 class="advantages__title title">Небольшая <br> площадь</h3>
               <span class="advantages__number">— №3 —</span>
               <p class="advantages__description">Все интересные места находятся очень близко</p>
             </li>
@@ -148,11 +148,17 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.66517184975!2d-111.8016628118553!3d34.86303429322318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1683022765347!5m2!1sru!2sru"
           height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img src="img/map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/map-desktop@1x.jpg 1x,
+          img/map-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x,
+          img/map-tablet@2x.jpg 2x">
+          <img src="img/map-mobile@1x.jpg" width="320" height="350" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
@@ -161,20 +167,11 @@
         <li class="social__item social__item--vkontakte">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы Вконтакте.</span>
-            <!-- <svg width="48" height="48">
-              <use href="img/social-vk.svg#social-vk">
-            </svg> -->
           </a>
         </li>
         <li class="social__item social__item--telegram">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Мы в Телеграме.</span>
-            <!-- <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" fill="#81B3D2" />
-              <path
-                d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
-                fill="white" />
-            </svg> -->
           </a>
         </li>
         <li class="social__item">

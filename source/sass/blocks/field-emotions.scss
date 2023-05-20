@@ -52,9 +52,18 @@
   padding: 16px 16px;
   box-sizing: border-box;
   margin-top: 20px;
+  color: inherit;
 
   @media (min-width: $tablet-width) {
     margin-top: 28px;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #E5E5E5;
   }
 }
 

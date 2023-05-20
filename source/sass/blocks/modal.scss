@@ -22,7 +22,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 244px;
     }
-
 }
 
 .modal__sent {
@@ -74,6 +73,7 @@
   height: 100%;
   background-color:rgba(0, 0, 0, 0.3);
   z-index: 2;
+  display: none;
 }
 
 .modal__description {
@@ -120,6 +120,10 @@
   align-items: center;
   justify-content: center;
   align-self: end;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
 }
 
 .modal__title {

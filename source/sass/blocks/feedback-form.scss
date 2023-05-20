@@ -58,6 +58,10 @@
     background-color: #FFFFFF;
     border: 4px solid #E5E5E5;
   }
+
+  input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .feedback-form__fieldset {
