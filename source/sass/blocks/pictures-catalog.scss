@@ -82,7 +82,7 @@
     content: "";
     position: absolute;
     background-color: #E5E5E5;
-    width: 115%;
+    width: calc(100% + 40px);
     height: 1px;
     left: -20px;
     bottom: 0;
@@ -99,7 +99,7 @@
   position: relative;
   display: block;
   cursor: pointer;
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   grid-column: 2/4;
   grid-row: 2/4;
@@ -151,8 +151,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 100%;
-    bottom: 15px;
+    bottom: 0;
     color: #FFFFFF;
+    min-height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   }
