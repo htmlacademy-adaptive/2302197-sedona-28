@@ -11,6 +11,7 @@
 .page-body__container {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 
   @media (min-width: $desktop-width) {
     width: 1200px;
