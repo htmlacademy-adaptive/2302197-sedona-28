@@ -25,33 +25,31 @@
     margin-top: 3px;
     margin-bottom: 3px;
   }
-
-
 }
 
 .social__item--vkontakte {
   position: relative;
   display: block;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 
 
-&::before {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 48px;
-  -webkit-mask-image: url("/img/social-vk.svg#social-vk");
-  position: absolute;
-  background-color: white;
+  &::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    mask-image: url("/img/social-vk.svg#social-vk");
+    position: absolute;
+    background-color: white;
   }
 }
 
 .social__item--vkontakte:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
 }
 
 .social__item--vkontakte:active {
-  background-color: #5496BD;
+  background-color: #5496bd;
 
   &::before {
     background-color: rgba(255, 255, 255, 0.3);
@@ -61,13 +59,13 @@
 .social__item--telegram {
   position: relative;
   display: block;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 
 
   &::before {
     content: "";
     position: absolute;
-    -webkit-mask-image: url("/img/social-tg.svg#social-tg");
+    mask-image: url("/img/social-tg.svg#social-tg");
     width: 48px;
     height: 48px;
     display: block;
@@ -76,11 +74,11 @@
 }
 
 .social__item--telegram:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
 }
 
 .social__item--telegram:active {
-  background-color: #5496BD;
+  background-color: #5496bd;
 
   &::before {
     background-color: rgba(255, 255, 255, 0.3);

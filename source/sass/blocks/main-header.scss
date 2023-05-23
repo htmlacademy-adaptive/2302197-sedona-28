@@ -41,34 +41,34 @@
   position: absolute;
   top: 0;
   right: 0;
-  color: #81B3D2;
+  color: #81b3d2;
 
   &:hover {
-    opacity:0.6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity:0.3;
+    opacity: 0.3;
   }
 }
 
 .main-header__toggle {
   @media (max-width: $mobile-width-only) {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  border: none;
-  background-color: inherit;
-  z-index: 3;
-}
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    z-index: 3;
+  }
 
-@media (min-width: $tablet-width) {
-  display: none;
-}
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 

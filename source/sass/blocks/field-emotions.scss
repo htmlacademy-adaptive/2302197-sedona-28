@@ -6,10 +6,10 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 123px;
       height: 1px;
-      left: 0px;
+      left: 0;
       top: -12px;
 
       @media (min-width: $desktop-width) {
@@ -20,10 +20,10 @@
     &::after {
       content: "";
       position: absolute;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 123px;
       height: 1px;
-      right: 0px;
+      right: 0;
       top: -12px;
 
       @media (min-width: $desktop-width) {
@@ -63,7 +63,7 @@
   }
 
   &:hover {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 }
 

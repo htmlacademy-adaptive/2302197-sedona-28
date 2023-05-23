@@ -14,7 +14,6 @@
     width: 100%;
     height: 100%;
   }
-
 }
 
 .advantages__header {
@@ -25,7 +24,7 @@
 
   br {
     @media (min-width: $tablet-width) {
-      display: none ;
+      display: none;
     }
   }
 
@@ -215,10 +214,10 @@
   grid-column: 2/4;
 
   @media (min-width: $tablet-width) {
-  img {
-    height: 256px;
+    img {
+      height: 256px;
+    }
   }
-}
 }
 
 .advantages__image--bridge {
@@ -234,5 +233,5 @@
 .advantages__list .advantages__br {
   @media (max-width: $mobile-width-only) {
     display: block;
-}
+  }
 }

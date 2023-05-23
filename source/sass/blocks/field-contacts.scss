@@ -5,7 +5,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 115%;
       height: 1px;
       left: -20px;
@@ -50,13 +50,14 @@
 
 .field-contacts__wrapper--phone {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
     width: 58px;
     height: 58px;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     background-image: url(/img/phone.svg);
     background-color: rgba(230, 230, 230, 1);
     background-repeat: no-repeat;
@@ -66,13 +67,14 @@
 
 .field-contacts__wrapper--e-mail {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
     width: 58px;
     height: 58px;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     background-image: url(/img/mail.svg);
     background-color: rgba(230, 230, 230, 1);
     background-repeat: no-repeat;
@@ -89,7 +91,7 @@
   padding: 16px 16px;
   box-sizing: border-box;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     min-width: 295px;
