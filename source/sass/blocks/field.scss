@@ -1,17 +1,57 @@
+.field {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      width: 115%;
+      height: 1px;
+      left: -20px;
+      bottom: 0;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: -24px;
+    }
+  }
+}
+
 .field__label {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   align-self: self-start;
   margin: 0;
-  margin-left: 36px;
-
+  margin-left: 16px;
+  color: #333333;
 }
 
 .field__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 16px;
+
+  &:first-of-type {
+    margin-top: 0;
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+  }
 }
 
 .field__input {
@@ -19,7 +59,24 @@
   line-height: 26px;
   font-weight: 700;
   padding: 16px 16px;
-  width: 280px;
+  min-width: 280px;
   height: 58px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
+
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 28px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 49px);
+  }
+}
+
+.field__title {
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

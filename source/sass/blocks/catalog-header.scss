@@ -3,15 +3,51 @@
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
 }
 
 .catalog-header__title {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .catalog-header__description {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0;
+  margin-top: 37px;
+  color: #333333;
 }

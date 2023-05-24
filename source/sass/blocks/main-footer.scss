@@ -1,17 +1,36 @@
 .main-footer {
-  padding-top: 33px;
+  padding-top: 41px;
   padding-bottom: 33px;
   padding-left: 18px;
   padding-right: 18px;
-}
+  min-width: 320px;
+  box-sizing: border-box;
 
-.developed__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .main-footer__link {
   text-decoration: none;
   color: inherit;
+  font-size: 21px;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
 }

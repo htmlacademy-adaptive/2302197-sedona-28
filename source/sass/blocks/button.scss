@@ -1,10 +1,23 @@
 .button {
-  background-color: #81B3D2;
-  color: #FFFFFF;
+  background-color: #81b3d2;
+  color: #ffffff;
   border: none;
-  padding: 16px 49px 16px 49px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
+

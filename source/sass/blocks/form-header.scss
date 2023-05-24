@@ -3,15 +3,58 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 28px;
-}
+  position: relative;
 
-.form-header__description {
-  font-size: 18px;
-  line-height: 26px;
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 44px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-position: center;
+    }
+  }
 }
 
 .form-header__description {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0;
+  margin-top: 24px;
+  color: #333333;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+  }
+}
+
+.form-header__title {
+  font-size: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }

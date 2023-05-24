@@ -3,18 +3,104 @@
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .infrastructure__list {
   @include list-reset;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .infrastructure__item {
-  padding-left: 18px;
+  padding-top: 33px;
+  text-align: start;
+  padding-left: 65px;
   padding-right: 18px;
-  padding-top: 33px
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 158px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 169px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 69px;
+  }
 }
 
 .infrastructure__item:last-child {
   padding-bottom: 46px;
+}
+
+.infrastructure__item--house::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  background-image: url("/img/icon-house.svg");
+  left: 18px;
+  top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 77px;
+    height: 72px;
+    background-size: cover;
+  }
+}
+
+.infrastructure__item--food::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/icon-burger.svg");
+  left: 18px;
+  top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 62px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 75px;
+    height: 68px;
+    background-size: cover;
+  }
+}
+
+.infrastructure__item--souvenirs::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  background-image: url("/img/icon-gift.svg");
+  left: 22px;
+  top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 64px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65px;
+    height: 77px;
+    background-size: cover;
+  }
 }

@@ -1,0 +1,30 @@
+.developed {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.developed__text {
+  align-self: center;
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
+}
+
+.developed__link {
+  display: contents;
+}
