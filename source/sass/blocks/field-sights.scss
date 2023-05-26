@@ -115,7 +115,7 @@
 .field-sights__input[type="checkbox"]:checked + .field-sights__mark::before,
 .field-sights__input[type="checkbox"]:checked + .field-sights__mark::after {
   position: absolute;
-  background-image: url(/img/tick.svg);
+  background-image: url("/img/tick.svg");
   width: 22px;
   height: 16px;
   top: 15px;
