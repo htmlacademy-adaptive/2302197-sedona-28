@@ -8,7 +8,7 @@
   .page-nav::before {
     content: "";
     position: absolute;
-    background-image: url(/img/icon-menu.svg);
+    background-image: url("/img/icon-menu.svg");
     width: 22px;
     height: 22px;
     top: 17px;
@@ -95,7 +95,7 @@
   @media (max-width: $mobile-width-only) {
     content: "";
     position: absolute;
-    background-image: url(/img/icon-cross.svg);
+    background-image: url("/img/icon-cross.svg");
     width: 22px;
     height: 22px;
     top: 17px;
@@ -106,4 +106,3 @@
 .page-nav--nojs .page-nav--closed {
   display: none;
 }
-

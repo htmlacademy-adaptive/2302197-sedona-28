@@ -112,7 +112,7 @@
 .field-impressions__input[type="radio"]:checked + .field-impressions__mark::before,
 .field-impressions__input[type="radio"]:checked + .field-impressions__mark::after {
   position: absolute;
-  background-image: url(/img/icon-radio.svg);
+  background-image: url("/img/icon-radio.svg");
   width: 16px;
   height: 16px;
   top: 15px;
