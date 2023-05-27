@@ -84,3 +84,32 @@
     background-color: rgba(255, 255, 255, 0.3);
   }
 }
+
+.social__item--youtube {
+  position: relative;
+  display: block;
+  background-color: #81b3d2;
+
+
+  &::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    mask-image: url("/img/social-youtube.svg#social-youtube");
+    position: absolute;
+    background-color: #ffffff;
+  }
+}
+
+.social__item--youtube:hover {
+  background-color: #669ec0;
+}
+
+.social__item--youtube:active {
+  background-color: #5496bd;
+
+  &::before {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}

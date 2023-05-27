@@ -112,10 +112,24 @@
 .field-impressions__input[type="radio"]:checked + .field-impressions__mark::before,
 .field-impressions__input[type="radio"]:checked + .field-impressions__mark::after {
   position: absolute;
-  background-image: url("/img/icon-radio.svg");
+  background-image: url("/img/stack.svg#icon-radio");
   width: 16px;
   height: 16px;
   top: 15px;
   left: 15px;
   content: "";
+  border-radius: 50px;
+  background-color: #333333;
+}
+
+.field-impressions__input[type="radio"]:checked + .field-impressions__mark:active {
+  &::before {
+    background-color: rgba(51, 51, 51, 0.3)
+  }
+}
+
+.field-impressions__input[type="radio"]:checked + .field-impressions__mark:active {
+  &::after {
+    background-color: rgba(51, 51, 51, 0.3)
+  }
 }

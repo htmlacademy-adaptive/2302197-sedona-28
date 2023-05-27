@@ -115,10 +115,23 @@
 .field-sights__input[type="checkbox"]:checked + .field-sights__mark::before,
 .field-sights__input[type="checkbox"]:checked + .field-sights__mark::after {
   position: absolute;
-  background-image: url("/img/tick.svg");
+  mask-image: url("/img/stack.svg#tick");
   width: 22px;
   height: 16px;
   top: 15px;
   left: 15px;
   content: "";
+  background-color: #333333;
+}
+
+.field-sights__input[type="checkbox"]:checked + .field-sights__mark:active {
+  &::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+}
+
+.field-sights__input[type="checkbox"]:checked + .field-sights__mark:active {
+  &::after {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
 }
