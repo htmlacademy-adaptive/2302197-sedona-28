@@ -1,14 +1,14 @@
 .main-footer {
   padding-top: 41px;
-  padding-bottom: 33px;
+  padding-bottom: 41px;
   padding-left: 18px;
   padding-right: 18px;
   min-width: 320px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 33px;
+    padding-bottom: 33px;
     padding-left: 60px;
     padding-right: 60px;
     display: flex;
@@ -18,6 +18,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 49px;
   }
 }
 
@@ -32,5 +33,13 @@
 
   &:active {
     color: rgba(179, 179, 179, 1);
+  }
+}
+
+.main-footer--catalog {
+  padding-top: 34px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
   }
 }

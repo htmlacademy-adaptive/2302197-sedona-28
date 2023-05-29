@@ -67,8 +67,9 @@
 .feedback-form__fieldset {
   border: none;
   padding: 0;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
   position: relative;
+  margin: 0;
   margin-top: 24px;
 
   @media (max-width: $mobile-width-only) {
@@ -92,7 +93,7 @@
 }
 
 .feedback-form .field {
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 }
 
 .feedback-form__required {
@@ -112,10 +113,11 @@
   }
 }
 
-.feedback-form__button {
-  margin-top: 32px;
+.feedback-form .feedback-form__button {
+  margin-top: 15px;
   min-width: 280px;
   min-height: 58px;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 14px;
