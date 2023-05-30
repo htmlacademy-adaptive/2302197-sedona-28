@@ -20,10 +20,18 @@
 
   &:hover {
     color: rgba(129, 179, 210, 1);
+
+    &::before {
+      background-color: #81b3d2;
+    }
   }
 
   &:active {
     color: rgba(179, 179, 179, 1);
+
+    &::before {
+      background-color: #b3b3b3;
+    }
   }
 
   &::before {
@@ -32,21 +40,9 @@
     width: 27px;
     height: 34px;
     mask-image: url("/img/stack.svg#htmlacademy");
-    right: 0px;
+    right: 0;
     bottom: -7px;
     background-color: #000000;
-  }
-}
-
-.developed__text:hover {
-  &::before {
-    background-color: #81B3D2;
-  }
-}
-
-.developed__text:active {
-  &::before {
-    background-color: #B3B3B3;
   }
 }
 

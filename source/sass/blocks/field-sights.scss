@@ -128,9 +128,7 @@
   &::before {
     background-color: rgba(51, 51, 51, 0.3);
   }
-}
 
-.field-sights__input[type="checkbox"]:checked + .field-sights__mark:active {
   &::after {
     background-color: rgba(51, 51, 51, 0.3);
   }
