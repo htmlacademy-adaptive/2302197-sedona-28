@@ -43,3 +43,9 @@
     padding-top: 49px;
   }
 }
+
+.main-footer--form {
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
+  }
+}
