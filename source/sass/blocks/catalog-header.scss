@@ -1,6 +1,6 @@
 .catalog-header {
   padding-top: 37px;
-  padding-bottom: 25px;
+  padding-bottom: 37px;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -24,17 +24,17 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
-    padding-bottom: 67px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
-    padding-bottom: 65px;
+    padding-bottom: 87px;
   }
 }
 
 .catalog-header__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   margin: 0;
 
@@ -48,6 +48,10 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  margin-top: 37px;
+  margin-top: 25px;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 }
